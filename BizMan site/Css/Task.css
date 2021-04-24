@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-gr-color: #4eac7d;
+    --main-bl-color: #413f3f;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* ============================== Globel Styling ========================== */
+
+.container{
+    padding: 0 15%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.row{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ============================== /Globel Styling ========================== */
+
+/* ============================== Nav Styling ========================== */
+
+nav{
+    background-color: var(--main-bl-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+nav .row .logo{
+    width: 30%;
+}
+nav .row .logo a{
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 18px 0;
+}
+nav .row .logo span{
+    color: var(--main-gr-color);
+    letter-spacing: -5px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav .nav-items{
+    display: flex;
+    width: 50%;
+}
+nav .nav-items li{
+    display: inline-block;
+    margin: 5px 0;
+    padding: 18px 15px;
+    font-size: 0.8rem;
+}
+nav .nav-items li a{
+    color: #fff;
+}
+nav .nav-items li.active,nav .nav-items li:hover {
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-color: var(--main-gr-color);
+    transition: background-color 0.3s ease-in-out ;
+}
+nav .search{
+    justify-content: space-around;
+    width: 20%;
+    text-align: right;
+    padding: 22px 0px;
+}
+nav .search .icon{
+    color: var(--main-gr-color);
+}
+
+/* ============================== /Nav Styling ========================== */
+
+/* ============================== Header Styling ========================== */
+
+header{
+    background-image: url(/img/22.jpg);
+    background-size: cover;
+    height: 85vh;
+}
+header .content{
+    display: inline-block;
+    color: #fff;
+    margin: 200px 0;
+    text-align: right;
+}
+header .content h1,h3{
+    padding: 10px 0;
+}
+header .content p{
+    padding: 10px 0;
+    margin-left: 30%;
+}
+header .content a{
+    font-weight: bold;
+    margin: 10px 10px;
+    padding: 15px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 0.7rem;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+header .content a:nth-last-child(1){
+    background-color: var(--main-gr-color);
+}
+
+/* ============================== /Header Styling ========================== */
+
+/* ============================== About Styling ========================== */
+
+#about .row{
+    display: flex;
+    margin-top: -3.5%;
+}
+#about .row .items{
+    background-color: var(--main-gr-color);
+    padding: 2% 12.4%;
+}
+#about .row .items:first-child{
+    background-color: var(--main-bl-color);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+#about .row .items:nth-child(3){
+    background-color: var(--main-bl-color);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+#about .row .True{
+    width: 70px;
+    height: 70px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    color: var(--main-gr-color);
+    background-color: #fff;
+    padding: 18px;
+    margin: 0 7px;
+}
+#about .row .nummber{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#about .row .items h{
+    display: inline-block;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ============================== /About Styling ========================== */
+
+/* ============================== Help Styling ========================== */
+
+#help .row .items{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+#help .row .tag{
+    font-weight: bold;
+    margin: 60px 345px;
+}
+#help .row .tag span{
+    font-weight: bold;
+    color: var(--main-gr-color);
+}
+#help .row .items .info{
+    width: 50%;
+}
+#help .row .items .info a{
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: var(--main-gr-color);
+    padding: 15px 25px;
+    border-radius: 4%;
+}
+#help .row .items .video{
+    margin-left: 7%;
+}
+#help .row .items .video img{
+    width: 400px;
+    height: 280px;
+    margin: -10% 0;
+}
+#help .row .items .video .icon{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--main-gr-color);
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* ============================== /Help Styling ========================== */
+
+/* ============================== Service Styling ========================== */
+
+#Service{
+    margin-top: 15%;
+    background-color: #eee;
+}
+#Service .row .tag{
+    margin: 50px 350px;
+    font-weight: bold;
+}
+#Service .row .tag span{
+    font-weight: bold;
+    color: var(--main-gr-color);
+}
+#Service .row .items{
+    display: flex;
+    overflow: hidden;
+    width: 30%;
+    margin: 0 1.66%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid rgb(207, 207, 207);
+    text-align: center;
+    position: relative;
+}
+#Service .row .items .nummber{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-bl-color);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 40%;
+}
+#Service .row .items h4{
+    padding: 10px 0;
+}
+#Service .row .items .icon{
+    font-size: 2.2rem;
+    position: absolute;
+    margin-top: -80px;
+    color: rgba(207, 207, 207,0.2);
+    left: -15%;
+    transition: left .8s ease-in-out;
+}
+#Service .row .items:hover{
+    background-color: var(--main-gr-color);
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+}
+#Service .row .items:hover .icon{
+    color: rgba(207, 207, 207,0.6);
+    left: 20%;
+    transition: color .3s ease-in-out;
+    visibility: visible;
+    transition: left .8s ease-in-out;
+}
+
+/* ============================== /Service Styling ========================== */
